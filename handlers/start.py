@@ -25,6 +25,9 @@ WELCOME_TEXT = """
 🔒 <b>Полная анонимность</b>
 📱 <b>Работает</b> на всех устройствах
 
+📢 <b>Наш канал:</b> <a href="https://t.me/VPNLunaticCat">@VPNLunaticCat</a>
+<i>Подпишись чтобы получать новые ключи и обновления!</i>
+
 ━━━━━━━━━━━━━━━━━━━━━━
 <i>🐾 Нажми кнопку ниже и начни пользоваться!</i>
 """
@@ -35,7 +38,9 @@ SUBSCRIBE_TEXT = """
 Для использования <b>LunaticCatVPN</b> необходимо 
 подписаться на наш канал.
 
-📢 Там мы публикуем:
+📢 <a href="https://t.me/VPNLunaticCat">@VPNLunaticCat</a>
+
+Там мы публикуем:
 • 🆕 Новые серверы и ключи
 • 📰 Новости VPN
 • 🎁 Промокоды и акции
@@ -99,7 +104,7 @@ async def check_subscription(bot: Bot, user_id: int) -> bool:
         member = await bot.get_chat_member(CHANNEL_ID, user_id)
         return member.status not in ["left", "kicked"]
     except Exception:
-        return True  # если канал не задан — пускаем всех
+        return True
 
 @router.message(Command("help"))
 async def cmd_help(message: Message):
@@ -127,6 +132,7 @@ async def cmd_help(message: Message):
 • Бесплатно: 1 ключ в день
 • Premium: неограниченно
 
+📢 <b>Канал:</b> <a href="https://t.me/VPNLunaticCat">@VPNLunaticCat</a>
 <i>По вопросам: @lunaticcat_support</i>
     """
     await message.answer(help_text)
