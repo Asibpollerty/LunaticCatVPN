@@ -8,45 +8,45 @@ ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "0").split(",")))
 DB_PATH = "lunaticcat.db"
 
 VPN_SERVERS = {
-    "🇺🇸 США 1": {
-        "flag": "🇺🇸",
-        "country": "США",
-        "city": "New York",
-        "ping": "~89ms",
-        "load": "low",
-        "key": "vmess://eyJ2IjoiMiIsInBzIjoiXHUyNmY4XHVmZTBmXHUyNmY4XHVmZTBmIiwiYWRkIjoic2VydmVyMy5iZWhsZXNodGJhbmVoLmNvbSIsInBvcnQiOiIyMDQwMSIsImlkIjoiNmEzYmNjMDgtOWM3Ny00YzAyLTg0NGItNGE2OTQzNGYyZmVhIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJ0bHMiOiIifQ=="
-    },
-    "🇺🇸 США 2": {
-        "flag": "🇺🇸",
-        "country": "США",
-        "city": "Los Angeles",
-        "ping": "~95ms",
-        "load": "medium",
-        "key": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI@service.ouluyu n9803.com:20003"
-    },
-    "🇨🇦 Канада": {
-        "flag": "🇨🇦",
-        "country": "Канада",
-        "city": "Toronto",
-        "ping": "~75ms",
-        "load": "low",
-        "key": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkNjEwNWJiZC1iZTBkLTQ1YjItODJhZC0zMWZkMTA3MWMxZDI@service.ouluyu n9803.com:26667"
-    },
-    "🇯🇵 Япония": {
-        "flag": "🇯🇵",
-        "country": "Япония",
-        "city": "Tokyo",
-        "ping": "~145ms",
-        "load": "low",
-        "key": "vmess://eyJhZGQiOiJzZXJ2ZXIzMi5iZWhsZXNodGJhbmVoLmNvbSIsInBvcnQiOiI0NDMiLCJpZCI6IjRiYThiZWRkLTcyODUtNDcyYS1iYzE0LWZiOTFkYzZiZTRjOSIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwidGxzIjoiIn0="
-    },
     "🇩🇪 Германия": {
         "flag": "🇩🇪",
         "country": "Германия",
         "city": "Frankfurt",
         "ping": "~35ms",
         "load": "low",
-        "key": "vmess://eyJhZGQiOiJzZXJ2ZXIzMS5iZWhsZXNodGJhbmVoLmNvbSIsInBvcnQiOiI0NDMiLCJpZCI6IjE4MjgzZDItZTk2OC00MmUxLTgwZDAtMTJmYTJmNWQzOGQ2IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJ0bHMiOiIifQ=="
+        "key": "vless://00000000-0000-4000-8000-000000000000@45.145.42.170:8005?allowInsecure=1&sni=sub.mot.ip-ddns.com&type=ws&host=sub.mot.ip-ddns.com&path=/security=tls#DE"
+    },
+    "🇬🇧 Великобритания": {
+        "flag": "🇬🇧",
+        "country": "Великобритания",
+        "city": "London",
+        "ping": "~45ms",
+        "load": "low",
+        "key": "vless://48b36b6a-eaa6-4843-9231-0bb8b38b5da5@152.67.158.177:2443?allowInsecure=0&sni=www.cloudflare.com&flow=xtls-rprx-vision-udp443&fp=firefox&security=tls#GB"
+    },
+    "🇵🇱 Польша": {
+        "flag": "🇵🇱",
+        "country": "Польша",
+        "city": "Warsaw",
+        "ping": "~40ms",
+        "load": "low",
+        "key": "trojan://IL37892054@outgoing-ladybird.rooster465.autos:443?allowInsecure=0&sni=outgoing-ladybird.rooster465.autos#PL"
+    },
+    "🇷🇺 Россия": {
+        "flag": "🇷🇺",
+        "country": "Россия",
+        "city": "Moscow",
+        "ping": "~20ms",
+        "load": "low",
+        "key": "vless://9e4f36da-8f61-44f8-a9a7-0fd3a8d81234@193.9.49.65:443?allowInsecure=0&sni=r.icy.de5.net&type=ws&host=r.icy.de5.net&path=/?ed=2560security=tls#RU"
+    },
+    "🇺🇸 США": {
+        "flag": "🇺🇸",
+        "country": "США",
+        "city": "New York",
+        "ping": "~89ms",
+        "load": "medium",
+        "key": "vless://9e4f36da-8f61-44f8-a9a7-0fd3a8d81234@172.64.229.85:443?allowInsecure=0&sni=r.icy.de5.net&type=ws&host=r.icy.de5.net&path=/?ed=2560security=tls#US"
     }
 }
 
