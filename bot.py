@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.client.default import DefaultBotProperties
 from config import BOT_TOKEN
-from handlers import start, vpn, profile, admin, support
+from handlers import start, vpn, profile, admin, support, payment
 from database import init_db
 
 logging.basicConfig(
@@ -26,6 +26,7 @@ async def main():
     dp.include_router(profile.router)
     dp.include_router(admin.router)
     dp.include_router(support.router)
+    dp.include_router(payment.router)
     
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
