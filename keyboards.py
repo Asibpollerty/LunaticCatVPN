@@ -16,7 +16,7 @@ def main_keyboard() -> ReplyKeyboardMarkup:
         KeyboardButton(text="📋 Мои ключи")
     )
     builder.row(
-        KeyboardButton(text="👥 Рефералы"),
+        KeyboardButton(text="👑 Купить Premium"),
         KeyboardButton(text="🆘 Поддержка")
     )
     return builder.as_markup(resize_keyboard=True)
